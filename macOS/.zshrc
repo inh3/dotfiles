@@ -3,7 +3,8 @@
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
 # https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
 
-export TERM="xterm-256color" CLICOLOR=1
+export TERM="xterm-256color"
+export CLICOLOR=1
 PROMPT='%B%F{014}%n%f%F{250}@%f%F{012}%m%f%b:%F{250}%D{%Y-%m-%dT%H:%M:%S%z}%f:%F{010}%d%f %# '
 RPROMPT='[%F{007}%?%f]'
 
@@ -15,9 +16,11 @@ export HOMEBREW_NO_ANALYTICS=1
 #######################################
 # alias
 
-alias vscode="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+source $HOME/.local_alias
 
+alias cpufetch="$HOME/workspace/github/cpufetch/cpufetch"
 alias firefox-dev="/Applications/Firefox.app/Contents/MacOS/firefox --new-instance --start-debugger-server --dev-tools -P \"development\""
+alias vscode="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 
 #######################################
 # pyenv
